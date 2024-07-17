@@ -1,0 +1,70 @@
+/* Font-Family */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+}
+*,
+::after,
+::before{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: var(--text-dark);
+    background: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+}
+
+/* root-declaration */
+:root{
+    --text-dark:#3A3A3A;
+}
+
+/* shared-style */
+h2{
+    font-size: 48px;
+    font-weight: 900px;
+    line-height: 120%;
+    text-align: center;
+    color: #ffffff;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration-line: none;
+    display: inline-block;
+    transition: 0.3s all ease-in-out;
+}
+span,
+small {
+    display: inline-block;
+}
+img {
+    vertical-align: middle;
+}
+.d-flex{
+    display: flex;
+}
+.container{
+    max-width: 1060px;
+    padding: 0 12px;
+    margin: 0 auto;
+    margin-top: 57px;
+    border: 2px solid red;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
+.d-inline-block {
+    display: inline-block;
+}
