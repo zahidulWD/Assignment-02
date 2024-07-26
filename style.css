@@ -1,6 +1,10 @@
-/* Font-Family */
+/* ===Font-Family=== */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+@font-face {
+    font-family: "Miama";
+    src: url(fonts/Miama.ttf);
+}
 *{
     margin: 0;
 }
@@ -17,6 +21,7 @@ body{
     font-size: 16px;
     font-weight: 600;
     font-family: "Inter", sans-serif;
+    box-sizing: border-box;
 }
 
 /* root-declaration */
@@ -24,7 +29,7 @@ body{
     --text-dark:#3A3A3A;
 }
 
-/* shared-style */
+/* ===shared-style=== */
 h2{
     font-size: 48px;
     font-weight: 900px;
@@ -53,11 +58,11 @@ img {
     display: flex;
 }
 .container{
-    max-width: 1060px;
-    padding: 0 12px;
+    max-width: 1120px;
+    /* padding: 0 10px; */
+    padding: 0 20px;
     margin: 0 auto;
-    margin-top: 57px;
-    border: 2px solid red;
+    margin-top: 40px;
 }
 .justify-content-between {
     justify-content: space-between;
@@ -68,3 +73,550 @@ img {
 .d-inline-block {
     display: inline-block;
 }
+
+
+/* ====header-nav area starts here==== */
+.header-nav{
+    text-align: center;
+}
+.header-nav > i{
+    color: rgb(230, 83, 60);
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 120%;
+}
+.header-nav ul > li > a {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #ffffff;
+    margin-left: 34px;
+    margin: 0 10px 0 0;
+}
+
+header.header-area ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav ul li.d-inline-block:first-child a{
+    margin-left: 0 !important;
+}
+
+.header-nav ul > li > a .home-btn{
+    background-color: #E6533C;
+    color: #ffffff;
+    border-radius: 45px;
+    align-items: center;
+    padding: 8px 20px 8px 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+.home-btn:hover{
+    opacity: 0.7;
+    transition: all ease-in 0.5s;
+}
+
+.big-btn{
+    width: 465px;
+    height: 40px;
+    margin: 0px 10px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+}
+
+.hamburger-manu{
+    display: none;
+    color: #ffffff;
+}
+/* ====header-nav area ends here==== */
+
+/* ====banner-area  starts here==== */
+
+.banner-content{
+    padding-right: 10%;
+}
+.banner-content h2{
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 120%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.banner-content h2 span{
+    font-size: 145px;
+    font-weight: 400;
+    font-family: "Miama";
+}
+
+.banner-content p{
+    margin: 16px 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+}
+.banner-content button{
+    background-color: #E6533C;
+    align-items: flex-start;
+    padding: 10px 40px 10px 40px;
+    border-radius: 42px;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 10px;
+    gap: 50px;
+}
+
+.banner-content button:hover{
+    opacity: 0.7;
+    transition: all ease-in 0.5s;
+}
+.banner-content .d-btn{
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    margin-left: 15px;
+}
+.banner-img h3{
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 24px;
+    color: #ffffff;
+}
+.banner-img p{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #E6533C;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+.banner-img{
+    position: relative;
+}
+
+.banner-img .rater{
+    width: 150px;
+    height: 90px;
+    left: 0;
+    top: 400px;
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);  
+}
+.banner-img .rater:last-child{
+    left: 200px;
+    top: 150px;
+}
+.banner-area{
+    position: relative;
+}
+/* ====banner-are ends here==== */
+
+/* ===habits-area starts here=== */
+.habit-area{
+  padding: 50px 0;
+}
+.habit-description{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    margin-top: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.habit-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.habit-card-1 {
+    width: 230px;
+    height: 270px;
+    margin-top: 30px;
+    text-align: center;
+}
+.habit-card-1 img{
+    outline: 4px solid rgba(255, 255, 255, 0.1);
+    border: 0.4px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+}
+.habit-card-1 h4{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 120%;
+    margin-top: 30px;
+
+}
+.habit-card-1 p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.3px;
+    text-align: center;
+    margin-top: 10px;
+}
+/* ===habits-area ends here=== */
+
+/* ====run-section starts here==== */
+.run-area{
+    padding: 0 0 100px;
+   
+}
+.run-area .container{
+    background-color: #222222;
+    border-radius: 10px;
+}
+.run-area .d-flex{
+    justify-content: space-between;
+    gap: 90px;
+}
+.run-img img{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+}
+
+.run{
+    padding: 20px;
+}
+.run-content h2{
+    text-align: left;
+
+}
+.run-content p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+}
+.run-content button{
+    background-color: #E6533C;
+    align-items: flex-start;
+    width: 50%;
+    height: 40px;
+    border-radius: 42px;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 10px;  
+}
+.run-content button:hover{
+    opacity: 0.7;
+    transition: all ease-in 0.5s;
+
+}
+/* ====run-section starts here==== */
+
+/* ====Extra-area style starts here==== */
+.extra-area{
+    padding: 20px;
+    margin-top: 5px;
+}
+.extra-title{
+    margin-bottom: 40px;
+    color: #E6533C;
+}
+
+.box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: repeating-conic-gradient(from var(--a), #ff2770 0%, #ff2770 5%, transparent 5%, transparent 40%, #ff2770 50%);
+    animation: animate 4s linear infinite;
+    border-radius: 20px;
+}
+@property --a{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+@keyframes animate{
+    0%{
+      --a:0deg
+    }
+    100%{
+      --a:360deg
+    }
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-conic-gradient(from var(--a), #45f3ff 0%, #45f3ff 5%, transparent 5%, transparent 40%, #45f3ff 50%);
+    animation: animate 4s linear infinite;
+    animation-delay: -1s;
+    border-radius: 20px;
+}
+
+.box::after{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: url(../images/image\ 5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    border: 8px solid #25252b;
+}
+/* ====Extra-area style ends here==== */
+
+/* ====BMI-area starts here===== */
+.bmi-title{
+    text-align: left;
+}
+.bmi-description{
+    text-align: left;
+}
+
+.bmi-m-content p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+.bmi-area{
+    background-color: #222222;
+}
+
+.bmi-content{
+    display: flex;
+    justify-content:space-around;
+}
+.bmi-table{
+    width: 50%;
+}
+.bmi-calculate{
+    width: 50%;
+}
+
+caption{
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 2px;
+    align-items: left;
+    margin-bottom: 40px;
+}
+table{
+    border-collapse: collapse;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+th{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px;
+    text-align: left;
+}
+td {
+    border: 1px solid  rgba(255, 255, 255, 0.5);
+    padding: 5px 10px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.calculate-title{
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+.calculate-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+form input {
+    padding: 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+form select{
+    padding: 15px 63px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.select{
+    padding: 15px 120px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+input, select, option{
+    background-color: #3A3A3A;
+    color: rgba(255, 255, 255, 0.5);
+} 
+
+.bmi-calculate button{
+    background-color: #E6533C;
+    color: white;
+    font-size: 18px;
+    padding: 12px 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: none;
+}
+.bmi-calculate button:hover{
+    opacity: 0.7;
+    transition: all ease-in 0.5s;
+}
+input:focus,
+select:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* ====BMI-area starts here===== */
+
+/* ====team area starts here====*/
+.team-area .container .teams{
+    background-color: #222222;
+    padding: 15px;
+    border-radius: 8px;
+}
+.team-area p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.members{
+    position: relative;
+}
+.members img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.m-content{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    height: 80px;
+    bottom: 2%;
+    left: 2%;
+    position: absolute;
+    text-align: center;
+}
+.m-content h4{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom:auto;
+}
+.m-content p{
+    color: rgba(255, 255, 255, 0.5);
+    align-items: left;
+}
+
+.teams{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.team-area{
+    margin-bottom: 80px;
+}
+/*====team area ends here====*/
+
+/* ===footer-area style starts here=== */
+.footer-area{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 65px 0 0;
+}
+.footer-content{
+  justify-content: space-around;
+}
+.footer-content i{
+    color: rgb(230, 83, 60);
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 120%;
+    text-align:left;
+}
+.footer-content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-row{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 120%;
+    margin-bottom: 40px;
+}
+.footer-row h4 {
+    margin-bottom: 20px;
+}
+.footer-row a{
+    display: block;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.5);
+	display: flex;
+    font-size: 18px;
+    font-weight: 400;
+	margin-bottom: 6px;
+	line-height: 1.7;
+}
+.footer-row a:hover{
+    color: #E6533C;
+}
+.footer-area hr{
+   color: #222222;
+   /* background-color: #222222; */
+}
+.all-right{
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/* ====footer-area ends here==== */
