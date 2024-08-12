@@ -343,6 +343,7 @@ header.header-area ul {
     padding: 30px;
     margin-bottom: 0px;
 }
+
 .extra-title{
     margin-bottom: 40px;
     color: #E6533C;
@@ -634,13 +635,12 @@ small{
     color: #E6533C;
 }
 .footer-area hr{
-   color: #222222;
-   /* background-color: #222222; */
+   color: #524c4c;
 }
 .all-right{
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 10px;
